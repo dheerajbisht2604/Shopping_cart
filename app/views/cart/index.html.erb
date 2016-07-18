@@ -12,6 +12,7 @@
         <p>Quantity: <%= quantity %></p>
       </li>
       <% total += quantity*product.price %>
+
       <% end %>
-  <p><b><%= number_to_currency(total, :unit => '$')%></b></p>
+  <p><b>Total Bill: <%= number_to_currency(total, :unit => '$')%></b></p>
       </ul>
